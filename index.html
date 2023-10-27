@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPF - আমকে আমি ভালো রাখবো</title>
+    <!---------BOOTSTRAP-CSS--------->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!----------CUSTOM-CSS---------->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--------SLICK-SLIDER--------->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+</head>
+<body>
+    <!-------HEADER-START--------->
+    <div class="header-top-section py-2">
+        <div class="container">
+            <div class="row header-top">
+                <div class="col-6 header-left d-flex">
+                    <div class="logo"><a href="#"><img src="assets/img/header-logo.png" alt="header-logo"></a></div>
+                    <h3 class="mt-2 ml-2">আমকে আমি ভালো রাখবো</h3>
+                </div>
+                <div class="col-6 header-right d-flex justify-content-end align-self-center">
+                    <a href="#" id="login" class="align-self-center mr-2">লগইন</a><span class="align-self-center mr-2"></span><a id="regis" class="align-self-center mr-2" href="#">নিবন্ধন</a>
+                   
+                    <!---------------LOGIN-POPUP-MARKUP------------------>
+                    <div id="login-popup" class="popup">
+                        <div class="popup-content">
+                            <span class="close" id="close-popup">&times;</span>
+                            <div class="top-col">
+                                <h2>আপনাকে স্বাগতম</h2>
+                                <h3>অনুগ্রহ করে লগইন করুন</h3>
+                                <p>লগইন করার জন্য আপনার মোবাইল নম্বর লিখুন ,
+                                    এরপরে ৩০ সেকেন্ড অপেক্ষা করুন এর মধ্যে আপনার 
+                                    মোবাইলে একটি কোড এস এম এস এর মাধ্যমে পাঠানো হবে।
+                                    উক্ত কোড লিখুন এবং লগইন করুন এবং আমাদের সেবা
+                                    ব্যবহার করুন যা শুধুমাত্র আপনার জন্যই তৈরি ।</p>
+                                    <a href="#">নিবন্ধন করুন </a>
+                            </div>
+                            <div class="bottom-col">
+                                <h4>লগইন করুন</h4>
+                                <form action="">
+                                    <input class="phn" type="number" placeholder="এখানে আপনার মোবাইল নম্বর লিখুন">
+                                    <input class="otp" type="number" placeholder="এখানে ও টি পি কোড লিখুন" name="" id="">
+                                    <input type="submit" value="লগিন করুন">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------LOGIN-POPUP-MARKUP---------------->
+
+                    <!------------------REGISTION-POPUP-MARKUP---------------->
+                    <div id="regis-popup" class="popup registation-popup">
+                        <div class="popup-content">
+                            <span class="close" id="close-regis-popup">&times;</span>
+                            <div class="top-col">
+                                <h2>১১ তম ব্যাচে নিবন্ধন করুন</h2>
+                                <div class="row">
+                                    <div class="col">
+                                        <h2>আসন সংখ্যা</h2>
+                                        <h3>২২২</h3>
+                                    </div>
+                                    <div class="col">
+                                        <h2>নিবন্ধিত শিক্ষার্থী</h2>
+                                        <h3>১০০</h3>
+                                    </div>
+                                    <div class="col">
+                                        <h2>আসন বাকি</h2>
+                                        <h3>১২২</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-col">
+                                <form action="">
+                                    <input class="phn" type="number" placeholder="শিক্ষার্থীর নাম লিখুন (বাংলায়)">
+                                    <input class="phn" type="number" placeholder="শিক্ষার্থীর মোবাইল নম্বর">
+                                    <input class="phn" type="number" placeholder="রেফারেন্সকারির নাম">
+                                    <input class="otp" type="number" placeholder="রেফারেন্সকারির মোবাইল নম্বর">
+                                    <h3 class="course-price">কোর্স মূল্য <span class="price">৫৫০০</span>টাকা মাত্র</h3>
+                                    <input type="submit" value="পেমেন্ট করুন">
+                                </form>
+                                <h3>পেমেন্ট পার্টনার</h3>
+                                <img src="assets/img/footer-payment.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-----------------REGISTION-POPUP-MARKUP------------------->
+
+                    <div class="menu-bar">
+                        <a href="profile.html"><img src="assets/img/nav-bar-icon.png" alt="nav bar icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center m-0" >অ্যাফারমেশন | শারিরিক সুস্থতা | মানসিক প্রশান্তি | আর্থিক সচ্ছলতা</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------HEADER-END--------->
+
+    <!-------HERO-SECTION-STRAT------>
+    <div class="hero-section">
+        <div class="container">
+            <div class="row">
+                    <div class="col round-circle-container">
+                        <div class="round-circle">
+                            <div class="col">
+                                <a href="#physical">
+                                    <h2>শারীরিক সুস্থতা</h2>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#mind">
+                                    <h2>মনের সুস্থতা</h2>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#financial">
+                                    <h2>আর্থিক সচ্ছলতা </h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="triangle">
+                            <div>
+                                <img src="assets/img/header-logo.png" alt="">
+                                <p>আমাদের জীবনের সকল অসুস্থতা ও বিভিন্ন সমস্যার
+                                    ক্ষেত্রে দায়ী হলো “টেনশন”। এম.পি.এফ. কোর্সে প্রথমেই
+                                    টেনশন থেকে বেরিয়েআসার পরামর্শ ও প্রেরণা দেওয়া হয়।
+                                    টেনশন থেকে মুক্তি লাভ হলে মানুষ পূর্ণ 
+                                   মনোযোগ সহকারে শারীরিক কার্যাবলি সম্পাদন করতে পারে 
+                                   ফলে জীবনে সাফল্য অর্জন সহজতর হয়।</p>
+                            </div>
+                        </div>
+                            <h2></h2>
+                        </div>
+                    </div>
+                    <div class="slider-bottom-con">
+                        <h2><span>১১ তম ব্যাচের নিবন্ধন চলবে</span><br><span>২৫ অক্টোবর পর্যন্ত</span></h2>
+                        <div class="col-2">
+                            <h2>২৬০ টি</h2>
+                            <h2>৬০ জন</h2>
+                        </div>
+                        <col-3 class="seat-col">
+                        <h3>আসন</h3>
+                        <h3>গ্রহণযোগ্য</h3>
+                        </col-3>
+                        <h4 class="registation"><a href="#">১১তম ব্যাচে নিবন্ধন করুন <img src="assets/img/slider-registation-arow.png">
+                        </a></h4>
+
+                    </div>
+            </div>
+        </div>
+        <div class="hero-bg-slider">
+            <div class="img-col">
+                <img src="assets/img/hero-bg.png" alt="">
+            </div>
+            <div class="img-col">
+                <img src="assets/img/hero-slider02.jpg" alt="">
+            </div>
+            <div class="img-col">
+                <img src="assets/img/hero-slider03.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-------HERO-SECTION-END------>
+
+    <!-----GOLD-MIND-SECTION-START------->
+        <div class="gold-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col gold">
+                        <h2>সচ্ছলতা , সুস্থতা এবং সোনার খনি প্রাপ্তির জন্য </h2>
+                        <p>আপনাকে কয়েক স্তর গভিরে যেতেই হবে কারন এটি আপনা আপনি আপনার কাছে এসে ধরা দিবে না ।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-----GOLD-MIND-SECTION-END------>
+
+    <!-----FINANCIAL-SECTION-STRAT------>
+      <div class="financial-section" id="financial">
+        <div class="financial-slider">
+            <div>
+                <img src="assets/img/second-banner.png" alt="">
+            </div>
+            <div>
+                <img src="assets/img/second-banner.png" alt="">
+            </div>
+            <div>
+                <img src="assets/img/second-banner.png" alt="">
+            </div>
+        </div>
+        <div class="slider-content">
+            <div class="container">
+                <h2>অর্থের বর্ষণ হবে</h2>
+                <h3>আপনার উপর</h3>
+                <a href="#">আরও জানুন</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-finalcial">
+                    <p>আর্থিক সচ্ছলতার সূত্র </p>
+
+                    <div class="img financial-topic-img"><img src="assets/img/financial-topic-rules.png" alt="">
+                        <img src="assets/img/financial-plan.png" alt="">
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-----FINANCIAL-SECTION-END------>
+    <!-----PHYSICAL-SECTION-END------>
+    <div class="physical-section" id="physical">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                        <div class="row shape-up-row">
+                                <div class="col" href="#">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="56.198" height="52.296" viewBox="0 0 56.198 52.296">
+                                            <g id="Group_2238" data-name="Group 2238" transform="translate(-73.225 -64.094)">
+                                              <path id="Path_1588" data-name="Path 1588" d="M180.609,121.585H140.968a5.32,5.32,0,0,0-5.3,5.744A111.518,111.518,0,0,0,148.5,171.082a5.315,5.315,0,0,0,7.559,1.953L189.412,151.6a5.339,5.339,0,0,0,1.91-6.795,61.713,61.713,0,0,1-5.437-18.553A5.329,5.329,0,0,0,180.609,121.585Z" transform="translate(-62.422 -57.491)" fill="#fff"/>
+                                              <g id="Group_381" data-name="Group 381" transform="translate(93.764 75.67)">
+                                                <g id="Group_380" data-name="Group 380" transform="translate(0 0)">
+                                                  <g id="Group_379" data-name="Group 379">
+                                                    <g class="icon" id="Group_378" data-name="Group 378">
+                                                      <path id="Path_1590" data-name="Path 1590" d="M196.745,147l0,0a2.228,2.228,0,0,0-3.147,0l-1.114,1.113-8.525,8.525,1.572,1.572,1.579,1.58,8.525-8.525,1.113-1.114A2.228,2.228,0,0,0,196.745,147Z" transform="translate(-181.914 -146.351)" fill="#474a54"/>
+                                                      <path id="Path_1591" data-name="Path 1591" d="M182.651,172.906l-3.062,3.062v0l4.479-1.649Z" transform="translate(-179.588 -160.494)" fill="#474a54"/>
+                                                      <path id="Path_1592" data-name="Path 1592" d="M182.653,171.3l-1.414-1.414-1.415,3.843-.233.632Z" transform="translate(-179.59 -158.883)" fill="#474a54"/>
+                                                    </g>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </svg>
+                                    </a>
+                                </div>
+                            <div class="col">
+                                <div class="circle">
+                                    <h2>শারিরীক সুস্থতা</h2>
+                                </div>
+                            </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="56.198" height="52.296" viewBox="0 0 56.198 52.296">
+                                            <g id="Group_2240" data-name="Group 2240" transform="translate(-240.781 -64.094)">
+                                              <path id="Path_1587" data-name="Path 1587" d="M500.082,126.255a61.72,61.72,0,0,1-5.437,18.553,5.338,5.338,0,0,0,1.909,6.794l33.358,21.432a5.315,5.315,0,0,0,7.559-1.953,111.521,111.521,0,0,0,12.83-43.754,5.32,5.32,0,0,0-5.3-5.744H505.357A5.329,5.329,0,0,0,500.082,126.255Z" transform="translate(-253.34 -57.491)" fill="#fff"/>
+                                              <g class="icon" id="Group_391" data-name="Group 391" transform="translate(260.495 75.981)">
+                                                <path id="Path_1597" data-name="Path 1597" d="M538.424,153.04a2.125,2.125,0,1,0,2.125,2.125A2.125,2.125,0,0,0,538.424,153.04Zm1.395,1.643-1.686,1.686a.337.337,0,0,1-.476,0l-.742-.742a.337.337,0,0,1,.476-.476l.5.5,1.448-1.448a.336.336,0,0,1,.476.476Zm-1.395,4.2a2.125,2.125,0,1,0,2.125,2.125A2.125,2.125,0,0,0,538.424,158.883Zm6.59-8.08h9.85a1.662,1.662,0,0,0,0-3.323h-9.85a1.662,1.662,0,0,0,0,3.323Zm9.85,2.556h-9.85a1.662,1.662,0,0,0,0,3.323h9.85a1.662,1.662,0,0,0,0-3.323Zm0,5.88h-9.85a1.662,1.662,0,0,0,0,3.323h9.85a1.662,1.662,0,0,0,0-3.323Zm-16.439-12.223a2.125,2.125,0,1,0,2.125,2.125A2.125,2.125,0,0,0,538.424,147.016Z" transform="translate(-536.299 -147.016)" fill="#474a54"/>
+                                              </g>
+                                            </g>
+                                          </svg> 
+                                    </a>
+                                </div>
+                        </div>
+                       <div class="row shape-down-row">
+                            <div class="col">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64.647" height="64.425" viewBox="0 0 64.647 64.425">
+                                        <g id="Group_2237" data-name="Group 2237" transform="translate(-94.819 -98.89)">
+                                          <path id="Path_1585" data-name="Path 1585" d="M217.645,196.869,184.29,218.3a5.321,5.321,0,0,0-1.35,7.707,112.638,112.638,0,0,0,42.5,33.962,5.322,5.322,0,0,0,7.22-3.022l13.518-37.283a5.331,5.331,0,0,0-2.586-6.548,62.409,62.409,0,0,1-18.98-15.169A5.333,5.333,0,0,0,217.645,196.869Z" transform="translate(-87.027 -97.139)" fill="#fff"/>
+                                          <g id="Group_376" data-name="Group 376" transform="translate(121.818 117.105)">
+                                            <g id="Group_375" data-name="Group 375">
+                                              <g class="icon" id="Group_374" data-name="Group 374">
+                                                <path id="Path_1589" data-name="Path 1589" d="M254.882,236.916a6.555,6.555,0,0,0-9.7,8.794l-.676.676-.1-.1a.71.71,0,0,0-1,0l-3.581,3.581a.709.709,0,0,0,0,1l.543.543.543.543a.709.709,0,0,0,1,0l3.581-3.581a.71.71,0,0,0,0-1l-.076-.076.676-.676a6.555,6.555,0,0,0,8.794-9.7Zm-1.082,8.19a5.024,5.024,0,1,1,0-7.108A5.032,5.032,0,0,1,253.8,245.105Z" transform="translate(-239.609 -234.999)" fill="#474a54"/>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="67.011" height="51.684" viewBox="0 0 67.011 51.684">
+                                        <g id="Group_2238" data-name="Group 2238" transform="translate(-151.596 -121.293)">
+                                          <path id="Path_1584" data-name="Path 1584" d="M336.822,245.568a62.311,62.311,0,0,1-13.55-1.485,5.3,5.3,0,0,0-6.117,3.385l-13.518,37.283a5.308,5.308,0,0,0,3.569,6.934,112.818,112.818,0,0,0,59.232,0,5.308,5.308,0,0,0,3.569-6.934l-13.518-37.283a5.3,5.3,0,0,0-6.117-3.385A62.3,62.3,0,0,1,336.822,245.568Z" transform="translate(-151.72 -122.665)" fill="#fff"/>
+                                          <g id="Group_385" data-name="Group 385" transform="translate(176.514 137.845)">
+                                            <g id="Group_384" data-name="Group 384">
+                                              <g id="Group_383" data-name="Group 383">
+                                                <g class="icon" id="Group_382" data-name="Group 382">
+                                                  <path id="Path_1593" data-name="Path 1593" d="M364.779,287.445a4.049,4.049,0,1,0-3.8-2.672A4.035,4.035,0,0,0,364.779,287.445Zm1.348.485-.911.868,1.184,5.255-1.621,1.608-1.621-1.608,1.184-5.255-.911-.868a8.154,8.154,0,0,0-6.8,8.04h16.305A8.154,8.154,0,0,0,366.127,287.93Z" transform="translate(-356.626 -279.371)" fill="#474a54"/>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64.647" height="64.425" viewBox="0 0 64.647 64.425">
+                                        <g id="Group_2239" data-name="Group 2239" transform="translate(-210.738 -98.89)">
+                                          <path id="Path_1586" data-name="Path 1586" d="M430.166,219.663l13.518,37.283a5.322,5.322,0,0,0,7.22,3.022,112.642,112.642,0,0,0,42.5-33.962,5.32,5.32,0,0,0-1.35-7.707l-33.355-21.43a5.333,5.333,0,0,0-6.963,1.076,62.4,62.4,0,0,1-18.98,15.169A5.331,5.331,0,0,0,430.166,219.663Z" transform="translate(-219.109 -97.139)" fill="#fff"/>
+                                          <g id="Group_390" data-name="Group 390" transform="translate(231.593 119.987)">
+                                            <g id="Group_389" data-name="Group 389">
+                                              <g id="Group_388" data-name="Group 388">
+                                                <g id="Group_387" data-name="Group 387">
+                                                  <g class="icon" id="Group_386" data-name="Group 386">
+                                                    <path id="Path_1594" data-name="Path 1594" d="M476.238,246.263v10.771h16.556V246.263Zm13.072,5.277a.313.313,0,0,1-.313-.313v-1.547l-3.8,3.8a.313.313,0,0,1-.443,0l-1.338-1.337-3.336,3.335a.313.313,0,0,1-.443-.443l3.557-3.557a.313.313,0,0,1,.443,0l1.338,1.337,3.628-3.628h-1.638a.313.313,0,1,1,0-.626h2.342a.313.313,0,0,1,.313.313v2.355A.313.313,0,0,1,489.31,251.54Z" transform="translate(-475.409 -243.88)" fill="#474a54"/>
+                                                    <path id="Path_1595" data-name="Path 1595" d="M476.238,270.75v-.288h0v.576H484.2v.412a1.436,1.436,0,0,1-1.436,1.436h-3.29v.626h10.078v-.626h-3.29a1.436,1.436,0,0,1-1.436-1.436v-.412h7.965v-.576h0v.288Z" transform="translate(-475.409 -256.768)" fill="#474a54"/>
+                                                    <path id="Path_1596" data-name="Path 1596" d="M492.654,243.548v-2.383H474.465v2.383l.829-.552H491.85Z" transform="translate(-474.465 -241.165)" fill="#474a54"/>
+                                                    <rect id="Rectangle_107" data-name="Rectangle 107" width="16.556" height="0.288" transform="translate(0.829 13.694)" fill="#474a54"/>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                </a>
+                            </div>
+                       </div>
+                       <div class="row content-row">
+                        <div class="col">
+                            <h2>2018</h2>
+                            <p>Lorem ipsum dolor sit</p>
+                        </div>
+                        <div class="col">
+                            <h2>2019</h2>
+                            <p>Lorem ipsum dolor sit</p>
+                        </div>
+                        <div class="col">
+                            <h2>2020</h2>
+                            <p>Lorem ipsum dolor</p>
+                        </div>
+                        <div class="col">
+                            <h2>2021</h2>
+                            <p>Lorem ipsum dolor sit</p>
+                        </div>
+                        <div class="col">
+                            <h2>2022</h2>
+                            <p>Lorem ipsum dolor sit</p>
+                        </div>
+                       </div>
+                       <div class="row back-pain">
+                        <div class="col">
+                            <h2>সুস্থতা আমাদের সবচেয়ে বড় নিয়ামত</h2>
+                            <p>তাই প্রভুর কাছে সুস্থ থাকার জন্য সর্বদা শোকর আদায় করুন</p>
+                        </div>
+                        <div class="col">
+                            <img src="assets/img/yoga_for_cure.png" alt="">
+                        </div>
+                       </div>
+                       <div class="pray">
+                        <h2>সুস্থতা আমাদের 
+                            সবচেয়ে বড় নিয়ামত</h2>
+                            <p>তাই প্রভুর কাছে সুস্থ থাকার জন্য 
+                                সর্বদা শোকর আদায় করুন</p>
+                        <img src="assets/img/pray.png" alt="">
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----PHYSICAL-SECTION-END------>
+
+    <!-----FIT-SECTION-START------>
+    <div class="fit-section">
+        <div class="container">
+            <div class="row fit-top">
+                <div class="col-7">
+                    <img src="assets/img/fit-section-left.png" alt="Image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-----FIT-SECTION-END------>
+
+    <!-----MIND-TENS-SECTION-START------>
+    
+    <div class="mind-tens">
+        <div class="container" id="mind">
+
+            <div class="heading">
+                <h2 class="uses-title">৫টি ইন্দ্রিয়ের সঠিক ব্যবহার আপনাকে করবে অনবদ্য</h2>
+            </div>
+            <div class="row right-uses">
+                <div class="info">
+                    <div class="col">
+                        <div class="img">
+                            <img src="assets/img/mouth.png" alt="">
+                        </div>
+                        <h3>স্বাদ</h3>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="col">
+                        <div class="img">
+                            <img src="assets/img/eye.png" alt="">
+                        </div>
+                        <h3>দৃষ্টি</h3>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="col">
+                        <div class="img">
+                            <img src="assets/img/hand.png" alt="">
+                        </div>
+                        <h3>স্পর্শ</h3>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="col">
+                        <div class="img">
+                            <img src="assets/img/ear.png" alt="">
+                        </div>
+                        <h3>শ্রবণ</h3>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="col">
+                        <div class="img">
+                            <img src="assets/img/nose.png" alt="">
+                        </div>
+                        <h3>ঘ্রান</h3>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/man.png" alt="">
+        </div>
+    </div>
+    <!-----MIND-TENS-SECTION-END------>
+    <div class="mind-tens mental-health-section">
+        <div class="mental-health">
+            <div class="row forward-life">
+                <h3>জীবনের পথে সামনে আগানোর জন্য</h3>
+                <p>মানসিক সুস্থতার বিকল্প নেই </p><p>মানসিক সুস্থতা রক্ষায় প্রয়োজনীয় কাজ</p>
+                <img src="assets/img/imgage.png" alt="">
+            </div>
+            <h2 class="mental-title">আপনি কেন মানসিক অসুস্থতায় 
+                ভুগছেন ?</h2>
+            <div class="row six-box">
+                <div class="col-6">
+                    <div class="shape">
+                        <h2>অলসতা</h2>
+                    </div>
+                    <img src="assets/img/mental-img01.png" alt="">
+                </div>
+                <div class="col-6">
+                    <div class="shape">
+                        <h2>বিক্ষিপ্ত মন</h2>
+                    </div>
+                    <img src="assets/img/mental-img02.png" alt="">
+                </div>
+                <div class="col-6">
+                    <img src="assets/img/mental-img03.png" alt="">
+                    <div class="shape">
+                        <h2>দুশ্চিন্তা</h2>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="assets/img/mental-img04.png" alt="">
+                    <div class="shape">
+                        <h2>ঋণের চিন্তা</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----BLOG-&-MEDIA-SECTION-END------>
+    <div class="blog-media-section">
+        <div class="container section-heading">
+            <div class="row">
+                <div class="col d-flex justify-content-between align-items-center p-0">
+                    <h2>ব্লগ ও মিডিয়া</h2>
+                    <h3 class="align-self-end">সর্বশেষ আপডেট ১২ অগাস্ট ২০২৩</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex single-post">
+                <div class="col-5 img-col"><img class="img-fluid" src="assets/img/dhen_morakaba_meditation.png" alt="Post Image"></div>
+                <div class="col-7 content-col">
+                    <p class="post-date">১২ অগাস্ট ২০২৩</p>
+                    <a href="#"><h2 class="title">হেডিং থাকবে এখানে </h2></a>
+                    <p class="content">এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে
+                        এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে
+                        এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে</p>
+                    </div>
+            </div>
+            <div class="row d-flex single-post">
+                <div class="col-5 img-col"><img class="img-fluid" src="assets/img/dhen_morakaba_meditation.png" alt="Post Image"></div>
+                <div class="col-7 content-col">
+                    <p class="post-date">১২ অগাস্ট ২০২৩</p>
+                    <a href="#"><h2 class="title">হেডিং থাকবে এখানে </h2></a>
+                    <p class="content">এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে
+                        এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে
+                        এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে</p>
+                    </div>
+            </div>
+            <div class="row d-flex single-post">
+                <div class="col-5 img-col"><img class="img-fluid" src="assets/img/dhen_morakaba_meditation.png" alt="Post Image"></div>
+                <div class="col-7 content-col">
+                    <p class="post-date">১২ অগাস্ট ২০২৩</p>
+                    <a href="#"><h2 class="title">হেডিং থাকবে এখানে </h2></a>
+                    <p class="content">এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে
+                        এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে
+                        এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে</p>
+                    </div>
+            </div>
+            <div class="row d-flex single-post">
+                <div class="col-5 img-col"><img class="img-fluid" src="assets/img/dhen_morakaba_meditation.png" alt="Post Image"></div>
+                <div class="col-7 content-col">
+                    <p class="post-date">১২ অগাস্ট ২০২৩</p>
+                    <a href="#"><h2 class="title">হেডিং থাকবে এখানে </h2></a>
+                    <p class="content">এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে
+                        এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে
+                        এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে</p>
+                    </div>
+            </div>
+            <div class="row d-flex single-post">
+                <div class="col-5 img-col"><img class="img-fluid" src="assets/img/dhen_morakaba_meditation.png" alt="Post Image"></div>
+                <div class="col-7 content-col">
+                    <p class="post-date">১২ অগাস্ট ২০২৩</p>
+                    <a href="#"><h2 class="title">হেডিং থাকবে এখানে </h2></a>
+                    <p class="content">এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে
+                        এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে
+                        এখানে বিস্তারিত তথ্য থাকবে ৬০ - ৭০ অক্ষরের মধ্যে</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-----BLOG-&-MEDIA-SECTION-END------>
+
+    <!-------FOOTER-START--------->
+
+    <div class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer-logo">
+                        <a href="#"><img src="assets/img/header-logo.png" alt="footer"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col info-col">
+                    <p>আমাকে আমি ভালো রাখবো অনলাইন প্রশিক্ষন কেন্দ্র </p>
+                    <p>জীবন পরিবর্তন করার জন্য আমাদের এই বিশেষ নিবেদন শুধুমাত্র আপনার জন্য</p>
+                    <p>যোগাযোগঃ <a href="tel:০১৩০৬৭৭৩৬৯৮">০১৩০৬৭৭৩৬৯৮</a> । <a target="_blank" href="https://goo.gl/maps/gEBZtLCLHGJ6m3xz9">কলাবাগান ধানমন্ডী - ৩২ , ঢাকা ১২০৬</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="payment">
+                        <img src="assets/img/footer-payment.png" alt="payment support image">
+                    </div>
+                    <div class="govt-logo">
+                        <img src="assets/img/bangladesh-govt-logo.png" alt="bangladesh-govt-logo">
+                    </div>
+                    <p class="govt-text">গণপ্রজাতন্ত্রী বাংলাদেশ সরকার দ্বারা অনুমদিত প্রতিষ্ঠান</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------FOOTER-END--------->
+
+    <!------NAVIGATION-SECTION-STAR----->
+    <div class="navigation-section">
+            <div class="container">
+                <div class="row">
+                <div class="col back">
+                    <a href="#">
+                        <img src="assets/img/back.png" alt="Back Icon">
+                        <p>পেছনে যান</p>
+                    </a>
+                </div>
+                <div class="col home">
+                    <a href="#">
+                        <img src="assets/img/home.png" alt="Home Icon">
+                        <p>পেছনে যান</p>
+                    </a>
+                </div>
+                <div class="col info">
+                    <a href="#">
+                        <img src="assets/img/information.png" alt="Information Icon">
+                        <p>পেছনে যান</p>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!------NAVIGATION-SECTION-END-----> 
+
+    <!--------JAVASCRIPT-LINKS------------>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.migrate.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

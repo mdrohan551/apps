@@ -1,0 +1,389 @@
+
+
+
+@media (min-width:401px) and (max-width:599.98px){
+    .profile-top .header .student-id {
+        font-size: 11px;
+        padding: 4px 44px 1px 12px;
+
+    }
+    .white_bg::after {
+        position: absolute;
+        width: 111%;
+        content: '';
+        height: 252%;
+        background: #fff;
+        left: -27px;
+        top: -30px;
+        box-shadow: 0 0 5px 1px #00000011;
+    }
+
+    .nav-link {
+        display: block;
+        padding: -0.5rem 1rem 2px;
+        padding: 9px;
+    }
+
+    .main_class .box {
+        width: 66px;
+        height: 68px;
+        padding: 2px;
+    }
+
+    .main_class .box h3 {
+        font-size: 10px ;
+        font-weight: 900;
+
+    }
+    .main_next_class {
+        text-align: center;
+        padding: 83px 0 68px 36px ;
+    }
+    .icon {
+        left: 383px;
+    }.icon ul li a {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin-left: 16px;
+    }
+
+    .student-course .course-bottom .page-title {
+        margin-top: -126px;
+    }
+    .full-color::after {
+        width: 128% ;
+    }
+
+    /* progress heading text  */
+    .main_next_class .row h1 {
+        font-size: 25px;
+        font-weight: 400;
+        color: #3572B8;
+        padding-left: 50px;
+    }
+    /* progress heading text  */
+    .sub_cat ul li:last-child {
+        padding: 13px 71px 3px 15px;
+        cursor: pointer;
+    }
+    .sub_cat2 ul li:last-child {
+        padding: 13px 156px 3px 6px;
+        cursor: pointer;
+    }
+    /* progress */
+    .progress_text {
+        position: absolute;
+        left: 53% !important;
+        top: 39%;
+        transform: translate(-50%, -50%);
+    }
+    .progress_text h3, .progress_text span {
+        font-size: 23px;
+    }
+
+    .full-color2::before {
+        bottom: -0;
+        height: 73%;
+    }
+
+    /* progress */
+    /* main next class */
+    .main_next_class {
+        text-align: center;
+        padding: 83px 0 68px 0px;
+    }
+
+    .sub_cat ul li:nth-child(1) {
+        padding: 16px 9px 6px 11px;
+    }
+
+    .sub_cat2 ul li:nth-child(1) {
+        padding: 18px 22px 6px 11px;
+    }
+
+    /* main next class */
+    .page_box {
+        padding: 46px 0 74px 0;
+        position: relative;
+    }
+
+    .student-course .course-bottom .live-class {
+        margin-bottom: 51px;
+    }
+
+    .profile-footer p {
+        font-size: 10px;
+    }
+
+    .profile-top .header .student-id {
+        font-size: 11px;
+    }
+
+    .header_heading h4 {
+        font-size: 17px;
+    }
+
+    .student-course .profile-top {
+        padding-bottom: 80px;
+    }
+    
+}
+@media (min-width:371px) and (max-width:400.98px){
+    .profile-top .header .student-id {
+        font-size: 11px;
+        padding: 4px 44px 1px 12px;
+
+    }
+
+    .nav-link {
+        display: block;
+        padding: -0.5rem 1rem 2px;
+        padding: 9px;
+    }
+    .main_class .box {
+        width: 49px;
+        height: 67px;
+        padding: 4px;
+    }
+    .main_class .box h3 {
+        font-size: 10px !important;
+        font-weight: 900;
+
+    }
+    .main_next_class {
+        text-align: center;
+        padding: 83px 0 68px 36px !important;
+    }
+    .icon {
+        left: 280px;
+    }
+
+    .student-course .course-bottom .page-title {
+        margin-top: -126px;
+    }
+    .icon ul li a {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin-right: 20px;
+    }
+
+
+    /* progress */
+    .progress_text {
+        position: absolute;
+        left: 50% !important;
+        top: 36%;
+        transform: translate(-50%, -50%);
+    }
+    .progress_text h3, .progress_text span {
+        font-size: 20px;
+    }
+
+    /* progress */
+    /* main next class */
+    .main_next_class {
+        text-align: center;
+        padding: 83px 0 68px 0px;
+    }
+    .main_class .box p {
+        font-size: 8px;
+    }
+    .main_class .box h3 {
+        font-size: 12px !important;
+        font-weight: 900;
+    }
+    .sub_cat ul li:nth-child(1) {
+        padding: 16px 9px 6px 11px;
+    }
+
+    .sub_cat2 ul li:nth-child(1) {
+        padding: 18px 22px 6px 11px;
+    }
+        /* proggress bottom box  */
+        .sub_cat ul li h4 {
+            font-size: 22px;
+        }
+        .sub_cat ul li p {
+            font-size:10px;
+        }
+        .sub_cat2 ul li h4 {
+            font-size: 22px;
+        }
+        .sub_cat2 ul li p {
+            font-size: 13px;
+        }
+        .main_next_class {
+            text-align: center;
+            padding: 50px 0 67px 0px !important;
+        }
+        .sub_cat2 ul li:last-child {
+            padding: 13px 73px 3px 18px;
+            cursor: pointer;
+        }
+        /* proggress bottom box  */
+     
+
+    /* main next class */
+    .page_box {
+        padding: 46px 0 74px 0;
+        position: relative;
+    }
+
+    .student-course .course-bottom .live-class {
+        margin-bottom: 51px;
+    }
+
+    .profile-footer p {
+        font-size: 10px;
+    }
+
+    .profile-top .header .student-id {
+        font-size: 11px;
+    }
+
+    .header_heading h4 {
+        font-size: 17px;
+    }
+    .student-course .course-bottom .class-time p {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #3B5EC9;
+        background: #fff;
+        padding: 10px 15px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    /* .student-course .profile-top {
+        padding-bottom: 80px;
+    } */
+    
+}
+  @media (min-width:320px) and (max-width:370.98px) {
+    /* class time start */
+    .student-course .course-bottom .class-time p {
+        font-size: 11px;
+    }
+    .student-course .course-bottom .live-class h3 {
+        font-size: 14px;
+    }
+    /* class time end */
+    .profile-top .header {
+        padding: 24px 0 0;
+    }
+      .profile-top .header .student-id {
+          font-size: 11px;
+          padding: 4px 44px 1px 12px;
+
+      }
+
+      .nav-link {
+          padding: 9px;
+      }
+      .main_class .box {
+        width: 39px;
+        height: 59px;
+        padding: 2px;
+    }
+
+      .main_class .box h3 {
+          font-size: 10px !important;
+          font-weight: 900;
+
+      }
+      .main_class .box p {
+        font-size: 7px;
+    }
+      .icon {
+        left: 217px;
+    }
+    .icon ul li a {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin-left: 10px;
+    }.icon ul li a {
+        margin-left: 10px;
+    }
+
+
+      /* progress */
+      .progress_text {
+        position: absolute;
+        left: 50%;
+        top: 35%;
+    }
+    .progress_text h3, .progress_text span {
+        font-size: 20px;
+        line-height: 21px;
+        /* font-weight: 400 !important; */
+        margin-bottom: 7px;
+    }
+    /* proggress bottom box  */
+    .sub_cat ul li h4 {
+        font-size: 18px;
+    }
+    .sub_cat ul li p {
+        font-size: 9px;
+    }
+    .sub_cat2 ul li h4 {
+        font-size: 15px;
+    }
+    .sub_cat2 ul li p {
+        font-size: 9px;
+    }
+    .main_next_class {
+        text-align: center;
+        padding: 50px 0 67px 0px !important;
+    }
+    /* proggress bottom box  */
+ 
+      /* progress */
+      /* main next class */
+      .main_next_class {
+        text-align: center;
+        padding: 83px 0 27px 0px;
+    }.main_next_class .row h1 {
+        font-size: 22px;
+        font-weight: 400;
+        color: #3572B8;
+    }
+
+      .sub_cat ul li:nth-child(1) {
+          padding: 16px 9px 6px 11px;
+      }
+
+      .sub_cat2 ul li:nth-child(1) {
+          padding: 18px 22px 6px 11px;
+      }
+
+      /* main next class */
+      .page_box {
+          padding: 46px 0 74px 0;
+          position: relative;
+      }
+
+      .student-course .course-bottom .live-class {
+          margin-bottom: 51px;
+      }
+
+      .profile-footer p {
+          font-size: 10px;
+      }
+
+      .profile-top .header .student-id {
+        background-color: #E6D0D3;
+        font-size: 9px !important;
+    }
+
+      .header_heading h4 {
+          font-size: 17px;
+      }
+   
+
+  
+  }
+ 

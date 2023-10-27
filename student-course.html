@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPF - আমকে আমি ভালো রাখবো</title>
+    <!---------BOOTSTRAP-CSS--------->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!----------CUSTOM-CSS---------->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/student-routine-responsive.css">
+    <link rel="stylesheet" href="assets/css/calender.css">
+    <!--------SLICK-SLIDER--------->
+    <!------------progress bar --------->
+    <link rel="stylesheet" href="assets/css/progresscircle.css">
+    <!------------progress bar --------->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body class="student-course ">
+    <div class="profile-top ">
+        <div class="container">
+            <div class="row header">
+                <div class="col-8">
+                    <div class="back-arrow"><a href="#"><img src="assets/img/header-back-arrow.png" alt=""></a></div>
+                    <div class="student-id">
+                        <span>আইডিঃ </span><span> MPF 9218823</span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="#"><img src="assets/img/setting-icon.png" alt=""></a>
+                    <a href="#"><img src="assets/img/notification-icon.png" alt=""></a>
+                    <a href="#"><img src="assets/img/profile-nav-icon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    <!------------COURSE TAB-------------->
+
+    <div class="course-bottom">
+        <div class="container">
+        <div class="white_bg">
+            <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">লাইভ ক্লাস </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">পূর্বের ক্লাস / আর্কাইভ</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#next-class"
+                        type="button" role="tab" aria-controls="next-class-tab" aria-selected="false">পরবর্তী
+                        ক্লাস</button>
+                </li>
+            </ul>
+        </div>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <div class="row download">
+                        <h1 class="page-title">লাইভ ক্লাস ও আর্কাইভ</h1>
+                        <div class="calendar">
+                            <div class="calendar-header">
+                                <span class="month-picker" id="month-picker">April</span>
+                                <div class="year-picker">
+                                    <span class="year-change" id="prev-year">
+                                        <pre><</pre>
+                                    </span>
+                                    <span id="year">2022</span>
+                                    <span class="year-change" id="next-year">
+                                        <pre>></pre>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="calendar-body">
+                                <div class="calendar-week-day">
+                                    <div>Sun</div>
+                                    <div>Mon</div>
+                                    <div>Tue</div>
+                                    <div>Wed</div>
+                                    <div>Thu</div>
+                                    <div>Fri</div>
+                                    <div>Sat</div>
+                                </div>
+                                <div class="calendar-days"></div>
+                            </div>
+
+                            <div class="month-list"></div>
+                        </div>
+                        <div class="class-details">
+                            <div class="row class-time">
+                                <div class="col">
+                                    <h3>ক্লাস শুরুর সময়</h3>
+                                    <p>রাত ৯ : ৩০ মিনিট</p>
+
+                                </div>
+                                <div class="col">
+                                    <h3>ক্লাস শেষের সময় </h3>
+                                    <p>রাত ১১ টা</p>
+                                </div>
+                            </div>
+                            <div class="row live-class">
+                                <h3>ক্লাসঃ ২ । আলোচনাঃ ধনী হবার কৌশল</h3>
+                                <a href="#">লাইভ ক্লাসে জয়েন করতে এখানে ক্লিক করুন </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    <div class="row download">
+                        <h1 class="page-title">পূর্বের ক্লাস / আর্কাইভ</h1>
+                        <!-- 2nd tab  -->
+                    <div class="col-12">
+                        <div class="page_box  ">
+                            <div class="col-1">
+                                <!------------------arrow icon -------------------->
+                                <div class="icon">
+                                    <ul class="d-flex">
+                                        <li><a href=""><i class="fa-solid fa-chevron-left"></i></a></li>
+                                        <li><a href=""><i class="fa-solid fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!------------------arrow icon -------------------->
+                            </div>
+                            <div class="row main_class animate__animated animate__fadeInRight">
+                                <div class="col-2 ">
+                                    <div class="box">
+                                        <h3> ক্লাস - ১</h3>
+                                        <p>Jan-2023</p>
+                                    </div>
+                                </div>
+                                <div class="col-2 ">
+                                    <div class="box">
+                                        <h3> ক্লাস - 2</h3>
+                                        <p>Fab-2023</p>
+                                    </div>
+                                </div>
+                                <div class="col-2 ">
+                                    <div class="box">
+                                        <h3> ক্লাস - 3</h3>
+                                        <p>Mar-2023</p>
+                                    </div>
+                                </div>
+                                <div class="col-2 ">
+                                    <div class="box">
+                                        <h3> ক্লাস - 4</h3>
+                                        <p>Apr-2023</p>
+                                    </div>
+                                </div>
+                                <div class="col-2 ">
+                                    <div class="box">
+                                        <h3> ক্লাস - 5</h3>
+                                        <p>May-2023</p>
+                                    </div>
+                                </div>
+                                <div class="col-2 ">
+                                    <div class="box">
+                                        <h3> ক্লাস - 6</h3>
+                                        <p>Jun-2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="discussion">
+                                <h1>আলোচনা </h1>
+                                <!-- scroll discussion start -->
+                                <div class="main_discussion_box d-flex animate__animated animate__fadeInDown">
+                                    <div class="progress">
+                                        <ul>
+                                            <span class="line"></span>
+                                            <li><a class="one actv" href="#sec1"></a></li>
+                                            <li><a class="two" href="#sec2"></a></li>
+                                            <li><a class="three" href="#sec3"></a></li>
+                                            <li><a class="four" href="#sec4"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="video ">
+                                        <div id="sec1" class="d-flex">
+                                            <ul class="w-80 letter">
+                                                <li>
+                                                    <h4>পরিচিতি ক্লাস - ১</h4>
+                                                </li>
+                                                <li>
+                                                    <p>তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                                <li>
+                                                    <h4>প্রথম ক্লাসের গুরুত্বপূর্ণ বানীসমুহ</h4>
+                                                </li>
+                                                <li>
+                                                    <p>প্তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="w-20 chek_vid">
+                                                <li><a href="#"><i class="fa-solid fa-check"></i></a></li>
+                                                <li><a href="#"><i class="fa-solid fa-play"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div id="sec2" class="d-flex">
+                                            <ul class="w-80 letter">
+                                                <li>
+                                                    <h4>পরিচিতি ক্লাস - ১</h4>
+                                                </li>
+                                                <li>
+                                                    <p>তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                                <li>
+                                                    <h4>প্রথম ক্লাসের গুরুত্বপূর্ণ বানীসমুহ</h4>
+                                                </li>
+                                                <li>
+                                                    <p>প্তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="w-20 chek_vid">
+                                                <li><a href="#"><i class="fa-solid fa-check"></i></a></li>
+                                                <li><a href="#"><i class="fa-solid fa-play"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div id="sec3" class="d-flex">
+                                            <ul class="w-80 letter">
+                                                <li>
+                                                    <h4>পরিচিতি ক্লাস - ১</h4>
+                                                </li>
+                                                <li>
+                                                    <p>তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                                <li>
+                                                    <h4>প্রথম ক্লাসের গুরুত্বপূর্ণ বানীসমুহ</h4>
+                                                </li>
+                                                <li>
+                                                    <p>প্তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="w-20 chek_vid">
+                                                <li><a href="#"><i class="fa-solid fa-check"></i></a></li>
+                                                <li><a href="#"><i class="fa-solid fa-play"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div id="sec4" class="d-flex">
+                                            <ul class="w-80 letter">
+                                                <li>
+                                                    <h4>পরিচিতি ক্লাস - ১</h4>
+                                                </li>
+                                                <li>
+                                                    <p>তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                                <li>
+                                                    <h4>প্রথম ক্লাসের গুরুত্বপূর্ণ বানীসমুহ</h4>
+                                                </li>
+                                                <li>
+                                                    <p>প্তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="w-20 chek_vid">
+                                                <li><a href="#"><i class="fa-solid fa-check"></i></a></li>
+                                                <li><a href="#"><i class="fa-solid fa-play"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div id="sec5" class="d-flex">
+                                            <ul class="w-80 letter">
+                                                <li>
+                                                    <h4>পরিচিতি ক্লাস - ১</h4>
+                                                </li>
+                                                <li>
+                                                    <p>তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                                <li>
+                                                    <h4>প্রথম ক্লাসের গুরুত্বপূর্ণ বানীসমুহ</h4>
+                                                </li>
+                                                <li>
+                                                    <p>প্তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="w-20 chek_vid">
+                                                <li><a href="#"><i class="fa-solid fa-check"></i></a></li>
+                                                <li><a href="#"><i class="fa-solid fa-play"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- scroll discussion end -->
+                            </div>
+                            <div class="discussion2 animate__animated animate__fadeInDown">
+                                <h1>প্রশ্ন-উত্তর ও মন্তব্য </h1>
+                                <!-- scroll discussion start -->
+                                <div class="main_discussion_box2 d-flex">
+                                    <div class="progress">
+                                        <ul>
+                                            <span class="line2"></span>
+                                            <li><a class="one2 actv2" href="#sec22"></a></li>
+                                            <li><a class="two2" href="#sec32"></a></li>
+                                            <li><a class="three2" href="#sec42"></a></li>
+                                            <li><a class="four2" href="#sec52"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="video2">
+                                        <div class="d-flex">
+                                            <ul class="w-80 letter" id="anchor-4">
+                                                <li>
+                                                    <h4>পরিচিতি ক্লাস - ১</h4>
+                                                </li>
+                                                <li>
+                                                    <p>তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                                <li>
+                                                    <h4>প্রথম ক্লাসের গুরুত্বপূর্ণ বানীসমুহ</h4>
+                                                </li>
+                                                <li>
+                                                    <p>প্তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="w-20 chek_vid">
+                                                <li><a href="#"><i class="fa-solid fa-check"></i></a></li>
+                                                <li><a href="#"><i class="fa-solid fa-play"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div id="sec22" class="d-flex">
+                                            <ul class="w-80 letter" id="anchor-3">
+                                                <li>
+                                                    <h4>পরিচিতি ক্লাস - ১</h4>
+                                                </li>
+                                                <li>
+                                                    <p>তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                                <li>
+                                                    <h4>প্রথম ক্লাসের গুরুত্বপূর্ণ বানীসমুহ</h4>
+                                                </li>
+                                                <li>
+                                                    <p>প্তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="w-20 chek_vid">
+                                                <li><a href="#"><i class="fa-solid fa-check"></i></a></li>
+                                                <li><a href="#"><i class="fa-solid fa-play"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div id="sec32" class="d-flex">
+                                            <ul class="w-80 letter" id="anchor-2">
+                                                <li>
+                                                    <h4>পরিচিতি ক্লাস - ১</h4>
+                                                </li>
+                                                <li>
+                                                    <p>তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                                <li>
+                                                    <h4>প্রথম ক্লাসের গুরুত্বপূর্ণ বানীসমুহ</h4>
+                                                </li>
+                                                <li>
+                                                    <p>প্তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="w-20 chek_vid">
+                                                <li><a href="#"><i class="fa-solid fa-check"></i></a></li>
+                                                <li><a href="#"><i class="fa-solid fa-play"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div id="sec42" class="d-flex">
+                                            <ul class="w-80 letter" id="anchor-2">
+                                                <li>
+                                                    <h4>পরিচিতি ক্লাস - ১</h4>
+                                                </li>
+                                                <li>
+                                                    <p>তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                                <li>
+                                                    <h4>প্রথম ক্লাসের গুরুত্বপূর্ণ বানীসমুহ</h4>
+                                                </li>
+                                                <li>
+                                                    <p>প্তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="w-20 chek_vid">
+                                                <li><a href="#"><i class="fa-solid fa-check"></i></a></li>
+                                                <li><a href="#"><i class="fa-solid fa-play"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div id="sec52" class="d-flex">
+                                            <ul class="w-80 letter" id="sec1">
+                                                <li>
+                                                    <h4>পরিচিতি ক্লাস - ১</h4>
+                                                </li>
+                                                <li>
+                                                    <p>তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                                <li>
+                                                    <h4>প্রথম ক্লাসের গুরুত্বপূর্ণ বানীসমুহ</h4>
+                                                </li>
+                                                <li>
+                                                    <p>প্তারিখঃ ১৬ নভেম্বর ২০২৩ । ব্যাচ ৯ম</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="w-20 chek_vid">
+                                                <li><a href="#"><i class="fa-solid fa-check"></i></a></li>
+                                                <li><a href="#"><i class="fa-solid fa-play"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- scroll discussion end -->
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="next-class" role="tabpanel" aria-labelledby="next-class-tab"
+                    tabindex="0">
+                    <div class="row download">
+                        <h1 class="page-title">পরবর্তী ক্লাস</h1>
+                        <!-- 3rd tab -->
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="main_next_class">
+                                    <div class="row">
+                                        <h1 class="animate__animated animate__fadeInDown">পরবর্তী ক্লাস শুরু হতে বাকিঃ </h1>
+                                    </div>
+                                    <!-- progress bar -->
+                                    <div class="circlechart " data-percentage="80">
+                                    </div>
+                                    <div class="progress_text ">
+                                        <p>আলোচনাঃ ৪</p>
+                                        <h3>৪২ ঘন্টা ৩২ মিনিট</h3>
+                                        <span> ১২ সেকেন্ড</span>
+                                        <h6>তারিখঃ ১২-০৯-২০২৩</h6>
+                                    </div>
+                                    <div class="row">
+                                        <div class="sub_cat animate__animated animate__fadeInUp">
+                                            <ul class="d-flex">
+                                                <li>
+                                                    <h3>বিষয়</h3>
+                                                </li>
+                                                <li>
+                                                    <h4>আর্থিক সচ্ছলতার সূত্র</h4>
+                                                    <p>উপার্জনের জন্য উপার্জনের সূত্র জানা জরুরী</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="sub_cat2 animate__animated animate__fadeInUp">
+                                            <ul class="d-flex">
+                                                <li>
+                                                    <h3>তথ্য</h3>
+                                                </li>
+                                                <li>
+                                                    <h4>৯ম ব্যাচ ২০২৩</h4>
+                                                    <p>মোট শিক্ষার্থীঃ ২৩৪ জন </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- progress bar -->
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="profile-footer footer2">
+        <div class="container" ">
+            <div class="row">
+                <a href="#">
+                    <div class="col">
+                        <img src="assets/img/course-learning.png" alt="">
+                        <p>আমার কোর্স</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="col">
+                        <img src="assets/img/live-learning.png" alt="">
+                        <p>লাইভ ক্লাস</p>
+                    </div>
+                </a>
+                <a href="profile.html">
+                    <div class="col">
+                        <img src="assets/img/Icon awesome-home.png" alt="">
+                    </div>
+                </a>
+                <a href="routine.html">
+                    <div class="col">
+                        <img src="assets/img/learning-support.png" alt="">
+                        <p>আমার কোর্স</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="col">
+                        <img src="assets/img/learning.png" alt="">
+                        <p>নোটিশ বোর্ড</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--------JAVASCRIPT-LINKS------------>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.migrate.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/calender.js"></script>
+    <script src="assets/js/progresscircle.js"></script>
+    <script src="assets/js/ws-scroli.js"></script>
+
+</body>
+
+</html>

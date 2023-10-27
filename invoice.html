@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+<style>
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.invoice-header .row{
+    display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.invoice-page .container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.invoice-page .invoice-header{
+    border-bottom: 1px solid #00AEF0;
+    position: relative;
+    padding: 0;
+}
+.invoice-page .invoice-header::after{
+    content: "";
+    position: absolute;
+    background-color:#00AEF0;
+    width: 40%;
+    height: 20px;
+}
+.invoice-page .invoice-header::before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 23px;
+    height: 37px;
+    left: 38.2%;
+    bottom: -39px;
+    transform: rotate(61deg);
+    z-index: 999;
+}
+.invoice-header .row .logo-col{
+    max-width: 30%;
+}
+.invoice-header .row .info-col{
+    max-width: 70%;
+}
+.invoice-header .row .col .logo{
+    width: 105px;
+    height: 105px;
+}
+.invoice-header .row .col .logo img{
+    width: 100%;
+}
+.invoice-header .row .info-col{
+    text-align: right;
+}
+.invoice-header .row .info-col h3{
+     font-size: 18px;
+     line-height: 17px;
+     font-weight: 400;
+     color: #404041;
+}
+.invoice-header .row .info-col p a{
+    font-size: 12px;
+    line-height: 19px;
+    color: #404041;
+}
+.invoice-header .row .info-col p {
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+.invoice-header .row .info-col p a:hover{
+    text-decoration: none;
+}
+.invoice-page .invoice-main .invoice-info h2{
+    font-size: 43px;
+    font-weight: bold;
+    background-color: #00AEF0;
+    padding: 20px 10px;
+    color: #fff;
+    margin: 0;
+}
+.invoice-page .invoice-main .invoice-info .invoice-details{
+    background: #F1FAFE;
+    padding: 20px 50px;
+}
+.invoice-page .invoice-main {
+    padding-top: 50px;
+}
+.invoice-page .invoice-main .row{
+    margin: 0;
+}
+.invoice-page .invoice-main .left{
+    width: 50%;
+}
+.invoice-page .invoice-main .row{
+    display: flex;
+}
+.invoice-page .invoice-main .invoice-info{
+    width: 50%;
+}
+.invoice-page .customer-info-col .customer-info{
+    margin-top: -270px;
+}
+.invoice-page .customer-info-col .customer-info p{
+    color: #00AEF0;
+    font-size: 15px;
+    line-height: 18px;
+}
+.invoice-page .customer-info-col .customer-info a, span{
+    color: #000;
+}
+.invoice-page .customer-info-col .customer-info a:hover{
+    text-decoration: none;
+}
+.invoice-page .customer-info-col .customer-info{
+    font: 20px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #00AEF0;
+}
+.invoice-page .order-details tr td{
+    text-align: center;
+    padding: 10px;
+}
+.invoice-page .order-details thead tr{
+    background: #00AEF0;
+    color: #fff;
+}
+.invoice-page .order-details thead tr td:nth-child(odd) {
+    background: #009EEB;
+}
+.invoice-page .order-details tbody tr:nth-child(odd){
+    background-color: #D9F3FD;
+}
+.invoice-page .order-details tbody tr:last-child{
+    background-color: #00AEF0;
+}
+.invoice-page .order-details tbody .white{
+    background-color: #fff;
+}
+.invoice-page .order-details tbody .bg{
+    background-color: #7FD6F7;
+}
+.invoice-page .order-details tbody .text{
+    width: 50%;
+    text-align: left;
+}
+.invoice-page .order-details tbody .tfooter{
+    color: #fff;
+}
+.invoice-page .qr-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.invoice-page .qr-info .col-6:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+}
+.invoice-page .qr-info .col-6:first-child img{
+    width: 74px;
+    height: 74px;
+}
+.invoice-page .qr-info p{
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+    </style>
+        <link rel="stylesheet" href="assets/css/invoice-responsive.css">
+</head>
+<body class="invoice-page">
+    <div class="invoice-header">
+        <div class="container">
+            <div class="row">
+                <div class="col logo-col">
+                    <div class="logo">
+                        <img src="assets/img/header-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col info-col">
+                    <h3>আমাকে আমি ভালো রাখবো অনলাইন প্রশিক্ষন কেন্দ্র</h3>
+                    <p><a href="tel:+৮৮০১৩০৬-৭৭৩৬৯৮">মোবাইল : +৮৮০১৩০৬-৭৭৩৬৯৮</a></p>
+                    <p><a href="mailto:sales@mpfcourse.com">মেইল : sales@mpfcourse.com</a></p>
+                    <p><a target="_blank" href="https://maps.app.goo.gl/9QXCgcnNPS3Gt5cj8">ঠিকানা: ধানমন্ডি ৩২ -  ঢাকা ১২০৬</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="invoice-main">
+        <div class="row">
+            <div class="col left">
+    
+            </div>
+            <div class="col invoice-info">
+                <h2>INVOICE</h2>
+                <div class="invoice-details">
+                    <p>Invoice: <span>#12345678</span></p>
+                    <p>Invoice Date: <span>02/04/2025</span></p>
+                    <p>Due Date: <span>02/04/2025</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row customer-info-col">
+            <div class="col customer-info">
+                <h3>ক্রেতার তথ্য</h3>
+                <p>মারজান শেখ</p>
+                <p>মোবাইল : <a href="tel:০১৩০৬৭৭৩৬৯৮">০১৩০৬৭৭৩৬৯৮</a></p>
+                <p>রেফারেন্সকারির নাম : <span>কেনান মাহামুদ</span></p>
+                <p>রেফারেন্সকারির মোবাইল : <a href="tel:01306773698">01306773698</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-details">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <table>
+                        <thead>
+                            <td>ক্রঃ নংঃ</td>
+                            <td>পন্যের বিবরন</td>
+                            <td>পরিমান</td>
+                            <td>দর</td>
+                            <td>TOTAL</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>458</td>
+                                <td>এম পি এফ কোর্স ব্যাচ ১১</td>
+                                <td>01</td>
+                                <td>5,500</td>
+                                <td>5,500</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="text" rowspan="2">আমাকে আমি ভালো রাখবো অনলাইন কোর্স ২০২৩
+                                    ব্যাচ ১১ তম নিবন্ধন করার জন্য  সরকারি / বেসরকারি
+                                    ভ্যাট নেই ।
+                                    </td>
+                                    <td class="bg">উপমোট</td>
+                                    <td class="bg"></td>
+                                    <td class="bg">৳5,500</td>
+                            </tr>
+                            <tr>
+                                 <td class="white"></td>
+                                <td>ট্যাক্স / ভ্যাট ০%</td>
+                                <td></td>
+                                <td>৳0.00</td>
+                            </tr>
+                            <tr class="tfooter">
+                                <td></td>
+                                <td></td>
+                               <td>মোট দাম</td>
+                               <td></td>
+                               <td>৳5,500</td>
+                            </tr>     
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row condition">
+            <div class="col">
+                <h2>শর্তাবলি ও নিতিমালা</h2>
+                <p>আমি প্রতিজ্ঞাপূর্বক ঘোষণা করিতেছি যে MPF কোর্স - মেন্টাল ফিজিক্যাল ফিনান্সিয়াল , PSM কোর্স প্রফেশনাল সেলস 
+                    মার্কেটিং ডেভলপমেন্ট কোর্স এর নিয়মাবলী পড়িয়া বুঝিয়া অংশগ্রহণে সম্মত হলাম। নিয়মিত অনলাইন ক্লাসে অংশগ্রহণ 
+                    করিবো , ক্লাসে প্রতিটি নির্দেশনা অনুধাবন করার আন্তরিক প্রচেষ্টা চালাবো , ধারাবাহিকতা রক্ষা করে ক্লাসে মনোযোগী 
+                    হবো । ক্লাসের কোন বিষয় বুঝতে অসুবিধা হলে তা প্রশিক্ষক এবং MPF অ্যাপ  ব্যবহার করে বুঝে নিব। এই কোর্স
+                    আপনাকে ভেতর থেকে বদলানোর ক্ষমতা রাখে । কোর্স শেষে আপনার ব্যক্তিগত জীবন বদলে যাবে , তৈরি হবে ইতিবাচক
+                    অতীন্দ্রিয় শক্তি আর এই জ্ঞান বা শক্তি সতর্কতার সাথে নিজের ও মানুষের কল্যাণে ব্যবহার করুন । এম পি এফ কোর্সটি 
+                    অতি উচ্চ স্তরের গবেষণা যাহা বিজ্ঞানভিত্তিক এবং বাস্তবসম্মত  যা বাস্তব জীবনে শতভাগ প্রয়োগযোগ্য প্রশিক্ষন । এরই
+                    মাঝে ৯৫% শিক্ষার্থীর জীবন ইতিবাচকভাবে পরিবর্তন হয়েছে । আমরা বিশ্বাস করি আপনি ভালো থাকবেন মানসিক ,
+                    শারীরিক , আর্থিকভাবে । জীবনেভালো থাকাটাই মুখ্য বিষয়।​</p>
+            </div>
+        </div>
+        <div class="row qr-info">
+            <div class="col-6">
+                <div class="scan">
+                    <img src="assets/img/invoice-qr.png" alt="">
+                    <p>স্ক্যান করুন ​</p>
+                </div>
+                <div class="approve">
+                    <img src="assets/img/invoice-approve.png" alt="">
+                    <p>অনুমোদন ​</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="signature">
+                    <img src="assets/img/invoice-signatuer.png" alt="">
+                    <p>পরিচালকের সাক্ষর</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="invoice-footer">
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6"></div>
+        </div>
+    </div>
+
+</body>
+</html>

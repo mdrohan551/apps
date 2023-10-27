@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPF - আমকে আমি ভালো রাখবো</title>
+    <!---------BOOTSTRAP-CSS--------->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!----------CUSTOM-CSS---------->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--------SLICK-SLIDER--------->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+</head>
+<body>
+    <div class="profile-top">
+        <div class="container">
+            <div class="row header">
+                <div class="col-8">
+                    <div class="back-arrow"><a href="#"><img src="assets/img/header-back-arrow.png" alt=""></a></div>
+                    <div class="student-id">
+                        <span>আইডিঃ </span><span> MPF 9218823</span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="#"><img src="assets/img/setting-icon.png" alt=""></a>
+                    <a href="#"><img src="assets/img/notification-icon.png" alt=""></a>
+                    <a href="#"><img src="assets/img/profile-nav-icon.png" alt=""></a>
+                </div>
+            </div>
+            <div class="stu-details">
+                <div class="row">
+                    <div class="student-info">
+                        <h3 class="stu-name">মারজান শেখ </h3>
+                        <p>বয়সঃ <span class="age">৩২, পেশাঃ <span class="ocopation">ব্যবসায়ী</span></span></p>
+                        <p><span class="batch">৯ম ব্যাচ</span> / <span class="date">২০২২-২০২৩</span></p>
+                    </div>
+                    <div class="student-img">
+                        <img src="assets/img/profile-img.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="chart">
+                        <img src="assets/img/chart.png" alt="">
+                    </div>
+                    <div class="student-addition-info">
+                        <p><a href="#" id="mental-health">মানসিক সুস্থতা</a></p>
+                        <p><a href="#" id="phycial-health">শারিরিক সুস্থতা</a></p>
+                        <p><a href="#" id="financial-health">আর্থিক সচ্ছলতা</a></p>
+                        <p><a href="#">কোর্স অগ্রগতি</a></p>
+                    </div>
+
+                    <!------ALL POPUP------>
+                    <div id="mental-health-popup" class="popup mental">
+                        <div class="popup-content">
+                            <span class="close" id="health-close-popup">&times;</span>
+                            <div class="pop-top">
+                                <div class="img">
+                                    <img src="assets/img/mental-health.png" alt="">
+                                </div>
+                                <p><span class="stu-name">মারজান শেখ</span>, এর মানসিক অবস্থা নিম্নরুপ</p>
+                            </div>
+                            <div class="pop-content">
+                                <p>
+                                    মারজান শেখ  এর মাসিক সঞ্চয় ২৩০০০ টাকা
+                                    যা সস্তিদায়ক নয় । সন্তানদের জন্য তার সঞ্চয়
+                                    ১০০০ টাকা যা খুব সল্প । সুনিশ্চিত আয়ের পথ
+                                    জানা নেই ।  প্রতিদিন প্রাথনা , সৎকর্ম অথবা
+                                    মেডিটেশন করেন না । মানসিক চাপ সৃষ্টি করে এরুপ
+                                    চিন্তা করছেন যেমনঃ _________ । যে যন্ত্রণা মনে নিয়ে
+                                    আপনি আপনার জীবন পার করছেন তা হলঃ ____
+                                    __________ । সোশ্যাল মিডিয়াতে প্রতিদিন ব্যয় করেন
+                                    ৪ ঘণ্টা প্রায়। প্রতিদিন আত্মউন্নয়নমূলক বই ,ভিডিও
+                                    বা অডিও দেখেন /পড়েন / শোনেন না । বর্তমান ঋণ
+                                    _____ টাকা এবং প্রতিমাসে নতুন ঋণের পরিমান
+                                    ____ টাকা । মাসিক আয় ______ টাকা এবং মাসিক
+                                    ব্যয় ____ টাকা । প্রতিদিন মেধাচর্চা করেন ___ ঘন্টা।
+                                    অর্থ হারিয়েছেন কপিতয় ___________ ব্যক্তিদের 
+                                    মাধ্যমে । জীবনে নেয়া ভুল সিধান্তগুলোর মধ্যে 
+                                    অন্যতম __________ । এটা আপনার ব্যক্তি জীবনে
+                                    প্রভাব ফেলছে ______ খাতে ।
+                                </p>
+                            </div>
+                            <div class="pop-bottom">
+                                <h3><span>৪৫%</span>মানসিকভাবে আপনি সুস্থ 
+                                    আছেন বর্তমান</h3>
+                                    <a href="#" class="health-routine">১০০% মানসিক সুস্থতার রুটিন দেখুন </a>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div id="phycial-health-popup" class="popup phycial">
+                        <div class="popup-content">
+                            <span class="close" id="phycial-close-popup">&times;</span>
+                            <div class="pop-top">
+                                <div class="img">
+                                    <img src="assets/img/phyciall-health.png" alt="">
+                                </div>
+                                <p><span class="stu-name">মারজান শেখ</span>, এর শারীরিক অবস্থা নিম্নরুপ</p>
+                            </div>
+                            <div class="pop-content">
+                                <p>
+                                    মারজান শেখ এর দৈনিক ব্যায়াম ____ । পানি পান 
+                                    করেন দিনে প্রায় _____ লিটার । মিস্টি ________ ।
+                                    শাঁক , সবজি ও ফলমূল ________ খান । ধূমপান 
+                                    ________ । চিনি ও লবন ______ । প্রতিদিন প্রাথনা , 
+                                    সৎকর্ম অথবা মেডিটেশন করেন না । খাবারের রুচি
+                                    কম । দেহের ওজন ______ কেজি এবং উচ্চতা ___ 
+                                    যার সামঞ্জস্যতা নেই । পুষ্টিকর খাবার গ্রহন করেন।
+                                    দুশ্চিন্তা করেন । ডায়বেটিস _______। শ্বাসকষ্ট নেই ।
+                                    
+                                    বর্তমান শারীরিক অসুস্থতাঃ ___________________
+                                    ______________________________________________।
+                                    
+                                    বর্তমান দুশ্চিন্তাঃ _______________________________
+                                    _______________________________________________।
+                                </p>
+                            </div>
+                            <div class="pop-bottom">
+                                <h3><span>১৮% </span>শারিরিকভাবে আপনি সুস্থ  
+                                    আছেন বর্তমান</h3>
+                                    <a href="#" class="health-routine">১০০% শারিরিক সুস্থতার রুটিন দেখুন  </a>
+                            </div>
+                        </div>
+                    </div>    
+                        </div>
+                    </div> 
+
+                    <div id="financial-health-popup" class="popup financial">
+                        <div class="popup-content">
+                            <span class="close" id="financial-close-popup">&times;</span>
+                            <div class="pop-top">
+                                <div class="img">
+                                    <img src="assets/img/financial-health.png" alt="">
+                                </div>
+                                <p><span class="stu-name">মারজান শেখ</span>, এর আর্থিক অবস্থা নিম্নরুপ</p>
+                            </div>
+                            <div class="pop-content">
+                                <p>
+                                    মারজান শেখ এর বর্তমান মাসিক আয় ______ টাকা।
+                                    বর্তমান বাৎসরিক আয় ____ টাকা । বর্তমান মাসিক
+                                    ব্যয় ______ টাকা এবং বর্তমান বাৎসরিক ব্যয় __
+                                    টাকা। অর্থাৎ এই আয় ব্যয়ের সমানুপাতিক নয় ।
+
+                                    অবাঞ্ছনিয় ব্যয়ঃ
+                                    ১ - ধূমপান করেন 
+                                    ২ - ফাস্টফুড খান
+                                    ৩ - অতিরিক্ত / অপ্রয়োজনীয় মোবাইল ব্যবহার
+                                    ৪ - অনিয়ন্ত্রিত ব্যয়
+                                    ৫ - টাকা ধার
+                                    ৬ - অনিয়ন্ত্রিত জীবন
+                                    বর্তমান পেশা _______ । বর্তমান পেশায় ব্যয়িত সময়
+                                    _____ ঘণ্টা - ১ দিন । এই সময়ে গড়ে প্রতিদিন আয় 
+                                    করেন _____ টাকা এবং এই সময় দৈনিক ব্যয় করে
+                                    আয়ের প্রতাশা _____ টাকা যা মাসে দাড়ায় _______
+                                    টাকা ।
+                                </p>
+                            </div>
+                            <div class="pop-bottom">
+                                <h3><span>৩৫%</span>আর্থিকভাবে সচ্ছল 
+                                    আছেন বর্তমান</h3>
+                                    <a href="#" class="health-routine">১০০% আর্থিক সচ্ছলতার রুটিন দেখুন </a>
+                            </div>
+                        </div>
+                    </div>  
+                        </div>
+                    </div> 
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!------------PROFILE-BOTTOM-------------->
+    <div class="profile-bottom">
+        <div class="container">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">ডাউনলোড </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">ড্যাশবোর্ড</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                    <div class="row download">
+                        <div class="col">
+                            <div class="img">
+                                <img src="assets/img/class-routin-icon.png" alt="">
+                            </div>
+                            <h3>কোর্স রুটিন</h3>
+                        </div>
+                        <div class="col">
+                            <div class="img">
+                                <img src="assets/img/course-certificate-icon.png" alt="">
+                            </div>
+                            <h3>কোর্স সনদ</h3>
+                        </div>
+                        <div class="col">
+                            <div class="img">
+                                <img src="assets/img/id-card-icon.png" alt="">
+                            </div>
+                            <h3>আইডি কার্ড</h3>
+                        </div>
+                        <div class="col">
+                            <div class="img">
+                                <img src="assets/img/task-icon.png" alt="">
+                            </div>
+                            <h3>আমার টাস্ক</h3>
+                        </div>
+                        <div class="col">
+                            <div class="img">
+                                <img src="assets/img/work-icon.png" alt="">
+                            </div>
+                            <h3>সেরা কাজ</h3>
+                        </div>
+                        <div class="col">
+                            <div class="img">
+                                <img src="assets/img/result-icon.png" alt="">
+                            </div>
+                            <h3>ফলাফল</h3>
+                        </div>
+                     </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                    <div class="row download">
+                        <div class="col">
+                            <div class="img">
+                                <img src="assets/img/refarance-icon.png" alt="">
+                            </div>
+                            <h3>রেফারেন্স</h3>
+                        </div>
+                        <div class="col">
+                            <div class="img">
+                                <img src="assets/img/appramation.png" alt="">
+                            </div>
+                            <h3>অ্যাফারমেশন</h3>
+                        </div>
+                        <div class="col">
+                            <div class="img">
+                                <img src="assets/img/video.png" alt="">
+                            </div>
+                            <h3>ভিডিও</h3>
+                        </div>
+                        <div class="col">
+                            <div class="img">
+                                <img src="assets/img/fitnase-check.png" alt="">
+                            </div>
+                            <h3>ফিটনেস চেকিং</h3>
+                        </div>
+                        <div class="col">
+                            <div class="img">
+                                <img src="assets/img/lokko-icon.png" alt="">
+                            </div>
+                            <h3>লক্ষ্য নির্ধারণ</h3>
+                        </div>
+                        <div class="col">
+                            <div class="img">
+                                <img src="assets/img/possitive-routine.png" alt="">
+                            </div>
+                            <h3>পজিটিভ রুটিন</h3>
+                        </div>
+                     </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="profile-footer">
+        <div class="container">
+            <div class="row">
+                <a href="student-course.html">
+                    <div class="col">
+                        <img src="assets/img/course-learning.png" alt="">
+                        <p>আমার কোর্স</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="col">
+                        <img src="assets/img/live-learning.png" alt="">
+                        <p>লাইভ ক্লাস</p>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="col">
+                        <img src="assets/img/Icon awesome-home.png" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="col">
+                        <img src="assets/img/learning-support.png" alt="">
+                        <p>আমার কোর্স</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="col">
+                        <img src="assets/img/learning.png" alt="">
+                        <p>নোটিশ বোর্ড</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--------JAVASCRIPT-LINKS------------>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.migrate.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

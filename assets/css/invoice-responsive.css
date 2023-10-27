@@ -1,0 +1,24 @@
+
+
+
+@media (max-width:599px){
+
+}
+@media (min-width:320px){
+    /* -----------------header--------------------- */
+    .invoice-header .row .col .logo img{
+        width: 50%;
+    }
+    .invoice-header .row .info-col h3 {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+    }
+    .invoice-header .row .info-col p a {
+        font-size: 11px;
+        line-height: 0px;
+        color: #404041;
+    }
+     /* -----------------header--------------------- */
+ 
+}
